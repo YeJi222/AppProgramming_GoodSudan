@@ -20,7 +20,7 @@
 ### [📝 주요 페이지 구성](https://github.com/YeJi222/AppProgramming_GoodSudan/blob/main/page.md)
 
 ## 4. 프로젝트 구조
-### [🌲 프로젝트 구조 Tree 형식으로 보기](https://github.com/YeJi222/AppProgramming_GoodSudan/tree/main)  
+### [🌲 프로젝트 구조 Tree 형식으로 보기](https://github.com/YeJi222/AppProgramming_GoodSudan/blob/main/projectStructure.md)  
 
 ## 3. 사용 언어 및 사용환경
 * HTML
