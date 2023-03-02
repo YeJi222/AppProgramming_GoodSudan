@@ -1,0 +1,156 @@
+/* About font style */
+@font-face {
+    font-family: "DoHyeon";
+    src: url("../fonts/DoHyeon-Regular.ttf");
+}
+@font-face {
+    font-family: "Jua";
+    src: url("../fonts/Jua-Regular.ttf");
+}
+
+* { /* For all elements */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(135deg, #f9f7ff 50%, rgb(253, 214, 214) 50%);
+}
+
+.headerArea{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Element stacking order */
+}
+.webName{ /* Website's Name */
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color: darkblue;
+    line-height: 35px;
+    font-size: 24px;
+    font-family: "Jua";
+}
+
+/* Menu bar */
+.header /* Header part - Menubar */
+{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menubar /* Menubar part */
+{
+    height: 50px;
+    width: 100%;
+    background: #342370;
+    font-family: "DoHyeon";
+}
+#homeIcon{
+    background: rgb(253, 214, 214);
+    color: black;
+    font-weight: bold;
+}
+#homeIcon:hover{
+    color: tomato;
+}
+/* Eliminate circle of ul tag */
+.menubar ul
+{
+    list-style: none;
+}
+/* Place the main menus from the left */
+.menubar li
+{
+    float: left;
+}
+.menubar a /* mainMenu, subMenu */
+{
+    color: white;
+    font-weight: normal;
+    padding: 2px 25px;
+    line-height: 46px; /* Distance between lines of text */
+    display: block;
+    text-align:center;
+}
+.menubar li a:hover,
+.menubar ul li:hover a { /* Setting of menubar area */
+    background: #EAE4FF;
+    color: black;
+    font-weight: bold;
+    
+}
+.menubar li ul
+{
+    display: none; /* Before hover, subMenu is hidden */
+}
+.menubar li:hover ul
+{
+    display: block; /* After hover, subMenu is appear */
+    position: absolute;
+}
+.menubar li:hover li a
+{
+    background: lightgray;
+    font-size: 15px;
+    text-align: left;
+}
+.menubar li li a ,
+.menubar li li
+{
+    float: none; /* block style */
+}
+/* subMenu hover */
+.menubar li ul li:hover a{
+    color: tomato;
+}
+.welcome{
+    color: white;
+    font-weight: bold;
+    padding: 2px 25px;
+    line-height: 46px; /* Distance between lines of text */
+    display: block;
+    float: right;
+    text-align: center;
+}
+
+/* Login Section */
+.loginSection{
+    position: fixed;
+    top: 60px;
+    right: 65px;
+    color: tomato;
+    font-weight: bold;
+}
+.loginIcon{
+    position: fixed;
+    top: 60px;
+    right: 125px;
+    color: tomato;
+    font-weight: bold;
+}
+.profileIcon{
+    position: fixed;
+    top: 40px;
+    right: 5px;
+    color: tomato;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    background-color: black;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    position: fixed;
+    bottom: 0;
+}
+#footer_text{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}

@@ -1,0 +1,307 @@
+<html>
+<head>
+    <title>Pray Page</title>
+    <link href="css/common.css" rel="stylesheet">
+    <style>
+        .page{
+            padding-top: 30px;
+            padding-bottom: 150px;
+        }/* It for all wep page*/
+        .prayfor{
+            padding-top: 70px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 70px;
+            font-size: 20px;
+            font-family: "Jua";
+        }/* Example for prayer */
+        .prayerforsudan{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 70px;
+            font-size: 20px;
+        }/* Prayer request*/
+        .verses{
+            text-align: center;
+            padding-top: 70px;
+        }
+        .prayer{
+            margin: 40px;
+        }/* For list of your prayer*/
+        caption{
+            font-family: "DoHyeon";
+            font-size: 30px;
+        }
+        table{
+            text-align: center;
+            background-color: rgb(191, 208, 242);
+            border-radius: 23px;
+        }
+        th{
+            font-family: "DoHyeon";
+            color: darkblue;
+            font-size: 20px;
+            padding: 10px;
+        }
+        td{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        tr:nth-child(even){
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .prayerimg{
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        .prayerPng{
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .pleasepray{
+            font-variant: small-caps;
+            color: black;
+            background-color: pink;
+            text-align:center;
+            padding: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }/* heding line*/
+
+        .registerPrayer{
+            text-align: center;
+        }
+        .registerPrayer h3{
+            font-family: "DoHyeon";
+            font-size: 25px;
+        }
+        .registerPrayer input{
+            width: 200px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 10px;
+            border: none;
+        }
+        .submitBtn{
+            background-color: tomato;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo, login, menubar - fixed -->
+    <div class="headerArea">
+        <div class="webName">
+            <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+            <div class="loginDiv" onclick="location.href='./login.html'">
+                <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+                <div class="loginSection">Login</div>
+                <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+            </div>
+        </div>
+
+        <!-- Menubar position -->
+        <div class="header">
+            <div class="menubar">
+                <ul class="menuItems"> <!-- Main menu -->
+                    <li><a id="homeIcon" href="index.html">Home</a></li>
+                    <li><a href="pray.html">Pray</a></li>
+                    <li>
+                        <a href="#">Introduction</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="intro_sudan.html">About Sudan</a></li>
+                            <li><a href="intro_website.html">About Our Website</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Donation</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="feeSupport.html">Fee Support</a></li>
+                            <li><a href="otherSupport.html">Other Support</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Volunteer</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="educationSupport.html">Education Support</a></li>
+                            <li><a href="generalSupport.html">General Support</a></li>
+                        </ul>
+                    </li>
+                    <p class="welcome" href="#">Welcome :)</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle part - can scroll -->
+    <div class="middle">
+        <img src="img/prayBackground.jpeg" style="height: 40%; width: 100%;">
+        <h1 style="font-family: fantasy; color: black; position: absolute; top: 230px; width: 100%; text-align: center;">
+            Prayer Page :)
+        </h1>
+        <br>
+
+        <div class="page">
+            <h1 style="text-align: center; color: darkblue;"><i>Prayers for peace in Sudan</i></h1>
+            <div class="prayfor">
+                <q>
+                    God, our Father of love and mercy, today we remember our brothers and sisters in Sudan. 
+                    All hopes for a life in dignity in an independent new state seem to vanish. 
+                    With grief we bring before you our pain, that instead of peace and reconciliation so much atrocities, hate and violence overshadows the entire country. 
+                    As it is your will that all people should live in harmony, peace and unity we ask you to grant the nation of Sudan, that the spirit forgiveness and reconciliation may overcome the evil spirits of war and self-interests. <br><br>
+                    Grant all who have power in state and society your divine wisdom to promote respect, justice and true reconciliation, so that the people of Sudan will enjoy life in abundance. Remove all obstacles hindering that your will be done. 
+                    Strengthen all of us, the people of Sudan and the entire ecumenical family not to lose hope but to become your instrument of peace.
+                </q>
+            </div>
+    
+            <div class="prayerimg">
+                <img class="prayerPng" src="img/Prayer.png" width="600px" height="350px">
+            </div>
+            
+            <div class="prayerforsudan">
+                <b>Headline prayer:</b> 
+                <em> for those starving. The World Food Programme has reported that a "hidden hunger emergency" is engulfing South Sudan; 
+                    8.3 million (of the roughly 11 million population) are facing extreme hunger, and may  starve without humanitarian assistance. 
+                    In 2021 WFP reached 5.9 million of them with food aid, but with their present resources (and with new demands such as Ukrainian refugees) 
+                    they cannot reach everyone, and can only provide the bare minimum to survive.
+                    Pray for all who are experiencing desperate hunger, and for all agencies striving to reach them.
+                </em> <br>
+
+                <b>Violence:</b> 
+                <em> Give thanks for this development, pray that the agreements reached will hold, 
+                    and pray that such peace dialogues would take place wherever there has been violent conflict
+                </em><br>
+
+                <b>Maridi: </b> 
+                <em>Water. Many settlements lack access to potable water, or the boreholes that do so are malfunctioning 
+                    or pumping contaminated water. Pray for Maridi to be adopted by one of the water charities 
+                    so they can make repairs and install new things. 
+                    Schools. In many rural classrooms, the only things present are a teacher,
+                    a blackboard set up beneath a tree, and logs for the students to sit on. There aren't many secondary schools 
+                    (just one is a church school, Haddow), and there isn't any boarding housing if students pass their primary leaving exam. 
+                    Pray for funding for Haddow Secondary, boarding facilities, and primary and nursery institutions. 
+                </em>
+            </div>
+
+            <h3 class="pleasepray">
+                <i>Please pray for Sudan and Sudan`s current prayer needs. We know that as we pray in faith our prayers have a huge impact! </i>
+            </h3>
+
+            <div class="prayer">
+                <table>
+                    <caption> Your prayer</caption>
+                    <tr><!--1sr row, head-->
+                        <th>Date</th>
+                        <th>Nickname</th>
+                        <th>Prayer</th>
+                        <th>Country</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr><!--2nd row-->
+                        <td>1999-1-25 12:31</td>
+                        <td>Daniel</td>
+                        <td>Pray for God to raise up leaders full of integrity, wisdom, and compassion</td>
+                        <td>Islael</td>
+                        <td>God bless you</td>
+                    </tr>
+                    <tr><!--3nd row-->
+                        <td>2000-2-29 04:10 </td>
+                        <td>Samuel</td>
+                        <td>Pray for the Prince of Peace to extinguish long-standing division, hate, and violence</td>
+                        <td>Egypt</td>
+                        <td>Good Day :)</td>
+                    </tr>
+                    <tr><!--4nd row-->
+                        <td>2003-12-31 12:31</td>
+                        <td>Esther</td>
+                        <td>Pray for the government's recent favor towards the Church to continue and increase</td>
+                        <td>Japan</td>
+                        <td>Love you all</td>
+                    </tr>
+                    <tr><!--5nd row-->
+                        <td>2004-6-13 15:02 </td>
+                        <td>Hanna</td>
+                        <td>Freedom to preach the Gospel in North to be given back, and for the government to be more tolerant and less threatening toward Christians.</td>
+                        <td>US</td>
+                        <td></td>
+                    </tr>
+                    <tr><!--6nd row-->
+                        <td>2005-7-8 13:20 </td>
+                        <td>Luke</td>
+                        <td>The effective T.V. Christian Program every Sunday morning to continue.</td>
+                        <td>France</td>
+                        <td>Have a good day :)</td>
+                    </tr>
+                    <tr><!--7nd row-->
+                        <td>2006-11-11 11:11</td>
+                        <td>Joseph</td>
+                        <td>Our Heavenly Father,
+                            We come into your presence with thanksgiving and gratitude for your grace, mercy and love in Sudan.
+                            We know things are not going so well in the country, but we believe that You will do the changes in Your own time.
+                            We trust that Sudan belongs to you, and therefore we surrender all things into your hand in faith.
+                            For in Jesus name we pray. Amen.</td>
+                        <td>UK</td>
+                        <td></td>
+                    <tr><!--8nd row-->
+                        <td>2007-10-9 14:22</td>
+                        <td>Moses</td>
+                        <td>God bless those who hunger and prayomg for they gcan know God</td>
+                        <td></td>
+                        <td></td>
+                    <tr><!--9nd row-->
+                        <td>2008-12-25 12:24</td>
+                        <td>Paul</td>
+                        <td>I pray for those in Sudan and I believe that God loves then and prat for God pretect from all surrenders and pray they will have peace</td>
+                        <td>somewhere in this World</td>
+                        <td>Jeses</td>
+                    <tr><!--10nd row-->
+                        <td>2020-4-5 22:59 </td>
+                        <td>Marry</td>
+                        <td>Pray for all who are experiencing desperate hunger, and for all agencies striving to reach them</td>
+                        <td></td>
+                        <td>Bless you</td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="registerPrayer">
+                <h3>Register as a Prayer!</h3> 
+                
+                <form>
+                    <fieldset>
+                        <legend>Register prayer</legend>
+                        Nickname: <input type="text" size="20"><br>
+                        Prayer: <input type="prayer" size="50"><br>
+                        Where are you from?: <input type="text" size="20"><br>
+                        Comments: <input type="text" size="50"><br>
+                        <br>
+
+                        <input class="submitBtn" type="submit" value="Submit" onclick="alert('You are registered as a prayer!');">
+                    </fieldset>
+                </form>
+            </div>
+            
+            <div class="verses">
+                <i>
+                    To have real mercy on the poor, as Jesus has shown the example (Marco 8:2) <br>
+                    To be aware of their need, to worry about them, and to be ready to take action for them at any time.
+                    Having mercy for the poor brothers is proof that God's love dwells in us. (1 John 3:17) <br>
+                    When we are kind to the poor, we worship God. (Proverbs 14:31)
+                </i>
+            </div>
+        </div>
+
+        <!-- Footer position - fixed -->
+        <div class="footer">
+            <p id="footer_text">Copyright by App Programming Team 02</p>
+        </div>
+    </div>
+</body>
+</html>

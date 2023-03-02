@@ -1,0 +1,537 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/common.css" rel="stylesheet">
+        <title>Website Introduction Page</title>
+        <style>
+            .middle{
+                margin-top: 190px;
+                text-align: center;
+                margin-bottom: 90px;
+            }
+            body{
+                overflow-x: hidden;
+            }
+            
+            h2{
+                text-align: center;
+            }
+            .register_member{
+                text-align: center;
+                margin: auto;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.814);
+                box-shadow: 5px 5px 5px grey;
+                padding: 20px;
+                width: 600px;
+                margin-top: 20px;
+            }
+            input{
+                background-color: rgb(197, 195, 240);
+                width: 250px;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                padding: 8px;
+                margin: 5px;
+                box-shadow: 2px 2px 6px gray;
+            }
+            .btn{
+                border: none;
+                border-radius: 15px;
+                font-size: 15px;
+                width: 300px;
+                height: 45px;
+                background-color: rgb(78, 21, 132);
+                color: white;
+                font-size: 25px;
+                font-family: "Jua";
+            }
+            h3{
+                text-align: center;
+                padding: 80px 0px 10px 0px;
+                font-size: 37px;
+                font-family: "DoHyeon";
+            }
+            a:hover{
+                color: gray;
+            }
+            li{
+                list-style-type:none;
+            }
+            #middle{
+                margin-top: 200px;
+                margin-bottom: 80px;
+            }
+
+            /* Page title */
+            .titleArea{
+                text-align: center;
+                margin-top: 10px;
+            }
+            .page_title{
+                font-family: fantasy;
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                color: darkblue;
+                margin-bottom: -5px;
+            }
+
+            /* reason section's style */
+            .reasonBox{
+                margin: auto;
+                padding: 20px;
+                border: 5px dashed rgb(155, 153, 203);
+                width: 500px;
+                height: 400px;
+                font-size: 20px;
+            }
+            .firstBox{
+                background-color: rgb(250, 203, 187);
+                margin-bottom: 20px;
+                height: 90px;
+            }
+            .secondBox{
+                background-color: rgb(250, 203, 187);
+                margin-bottom: 10px;
+                margin-top: 20px;
+                height: 130px;
+            }
+            .conclusion{
+                background-color: rgb(250, 203, 187);
+                margin-bottom: 10px;
+                margin-top: 20px;
+                height: 140px;
+            }
+            .clickText{
+                padding: 30px;
+            }
+            
+            /* purpose section's style */
+            .purposeArea{
+                background-color: #ddd0ef; 
+                height: 400px;
+                margin: 30px;
+                border-radius: 10px;
+                display: grid;
+                grid-template-columns: 33% 34% 33%;
+            }
+            .purpose{
+                border-radius: 10px;
+                margin: 15px;
+                text-align: center;
+                overflow: scroll;
+                background-color: white;
+            }
+            .purpose::-webkit-scrollbar{
+                display: none;
+            }
+            .purpose:hover{
+                background-color: rgb(255, 245, 239);
+            }
+            .purpose_img{
+                width: 160px;
+                height: 160px;
+                margin: auto;
+                overflow: scroll;
+            }
+            .purpose_content{
+                font-weight: bold;
+                font-size: 18px;
+                padding: 5px;
+                font-family: "Jua";
+            }
+            .purpose_title{
+                text-align: center;
+                font-weight: bold;
+                color: darkblue;
+                font-size: 22px;
+                font-family: "DoHyeon";
+            }
+
+            /* Website operating video's position */
+            .websiteVideo{
+                text-align: center;
+            }
+
+            /* Introduction to our team members */
+            .card-group{
+                text-align: center;
+            }
+            .card-group2{
+                text-align: center;
+                position: relative;
+                bottom: 90px;
+                
+            }
+            .card{
+                display: inline-block;
+                margin: 20px;
+                width: 400px;
+                height: 200px;
+                background-color: rgb(246, 252, 210);
+                border-radius: 10px;
+                box-shadow: 4px 4px 4px grey;
+            }
+            @media(max-width: 900px){
+                .card-group2{
+                    bottom: 0px;
+                }
+            }
+            .card-photo{
+                width: 80%;
+                height: 70%;
+                border-radius: 20px;
+                margin: 15px;
+            }
+            .photo-area{
+                height: 100%;
+                width: 35%;
+                border-radius: 10px;
+                background-color: tomato;
+            }
+            .info{
+                text-align: left;
+                position: relative;
+                bottom: 175px;
+                left: 160px;
+                line-height:25px;
+                font-size: 15px;
+            }
+            .blank{
+                height: 1px;
+            }
+            .name{
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .student_id{
+                font-size: 15px;
+            }
+            .role{
+                color: red;
+                font-size: 12px;
+            }
+            .member{
+                text-align: center;
+                position: relative;
+                bottom: 3px;
+                color: white;
+            }
+        </style>
+        <script>
+            /* reason of our website's name */
+            var text_styles = {
+                "font-size" : "20px", 
+                "font-family" : "Jua"
+            }
+
+            function clickFunction(id){
+                let click = document.getElementById(id);
+                if(id == 'click1'){
+                    click.innerHTML = "'Good' means it's a good meaning in English.";
+                } else if(id == 'click2'){
+                    click.innerHTML = "'Sudan' means first, country Sudan, and second, means way in Korean.";
+                } else{
+                    click.innerHTML = " Therefore, 'Good Sudan' was planned in the hope that our homepage would be used to help Sudan in a positive way.";
+                }
+                
+                Object.assign(click.style, text_styles);
+            }
+
+            /* making a membership card */
+            var card_styles = {
+                "background-color" : "lightgray",
+                "box-shadow" : "2px 2px 4px gray",
+                "border-radius" : "15px",
+                "width" : "350px",
+                "height" : "200px",
+                "padding" : "10px",
+                "margin" : "auto",
+                "font-size" : "17px"
+            }
+            var title_styles = {
+                "color" : "black",
+                "font-weight" : "bold",
+                "font-size" : "23px"
+            }
+            var img_styles = {
+                "border-radius" : "30px"
+            }
+
+            function make_card(){
+                let name = document.getElementById("input_name");
+                let age = document.getElementById("input_age");
+                let created_date = document.getElementById("input_date");
+                let finish_text = document.getElementById("make_finish");
+                let card = document.getElementById("member_card");
+                let card_title = document.getElementById("title");
+                let card_content = document.getElementById("content");
+
+                // Input Check
+                if(name.value == ''){
+                    alert('You should input your name!');
+                } else if(age.value == ''){
+                    alert('You should input your age!');
+                } else{
+                    // Date Format Check
+                    if(!(created_date.value[4] == '.' && created_date.value[7] == '.' && (created_date.length = 10))){
+                        alert('You should check the date format!!');
+                    } else{ // correct format 
+                        // Calculate Expired Date
+                        var date_year = '';
+                        for(var i = 0 ; i < 4 ; i++){
+                            date_year += created_date.value[i];
+                        } 
+                        var remainder_date = '';
+                        for(var i = 4 ; i < 10 ; i++){
+                            remainder_date += created_date.value[i];
+                        } 
+                        var date_year_num = parseInt(date_year);
+                        date_year_num += 3; // valid for 3 years
+                        var expired_date = String(date_year_num) + remainder_date;
+                        
+                        // After making membership card
+                        finish_text.innerHTML = "<br><br>" + "Congratulations!" + "<br>" + "You became a member who loves Sudan!" + "<br>";
+
+                        card_title.innerHTML = "Member Card";
+                        card_content.innerHTML = '<div><img src="img/profile.png" style="position: relative; right: 95px; width:150px; height:165px; border-radius:10px; margin:5px;">' 
+                                + '<div style="position: relative; bottom: 160px; left: 170px; text-align: left;">' 
+                                    + 'Name: ' + name.value + '<br>'
+                                    + 'Age: ' + age.value
+                                    + '<p style="position: relative; left: 1px; margin: 6px; color: darkorange; font-weight: bold; font-size: 19px;">' + 'You are a member :)' + '</p>'
+                                    + 'Created Date: ' + created_date.value + '<br>'
+                                    + 'Expired Date: ' + expired_date  
+                                    + '<p style="position: relative; left: 45px; top: -10px; color: darkblue; font-weight: bold; font-size: 22px;">' + '<br>' + 'GoodSudan❤️' + '</p>'
+                                + '</div>' 
+                            + '</div>'; 
+                        Object.assign(card.style, card_styles);
+                        Object.assign(card_title.style, title_styles);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Logo, login, menubar - fixed -->
+        <div class="headerArea">
+            <div class="webName">
+                <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+                <div class="loginDiv" onclick="location.href='./login.html'">
+                    <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+                    <div class="loginSection">Login</div>
+                    <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+                </div>
+            </div>
+    
+            <!-- Menubar position -->
+            <div class="header">
+                <div class="menubar">
+                    <ul class="menuItems"> <!-- Main menu -->
+                        <li><a id="homeIcon" href="index.html">Home</a></li>
+                        <li><a href="pray.html">Pray</a></li>
+                        <li>
+                            <a href="#">Introduction</a>
+                            <ul> <!-- Sub menu-->
+                                <li><a href="intro_sudan.html">About Sudan</a></li>
+                                <li><a href="intro_website.html">About Our Website</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Donation</a>
+                            <ul> <!-- Sub menu-->
+                                <li><a href="feeSupport.html">Fee Support</a></li>
+                                <li><a href="otherSupport.html">Other Support</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Volunteer</a>
+                            <ul> <!-- Sub menu-->
+                                <li><a href="educationSupport.html">Education Support</a></li>
+                                <li><a href="generalSupport.html">General Support</a></li>
+                            </ul>
+                        </li>
+                        <p class="welcome" href="#">Welcome :)</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle part - can scroll -->
+        <div class="middle">
+            <img src="img/clouds.jpg" style="width:100%; height: 40%; margin-top: -40px;" >
+            <h1 style="font-family: fantasy; color: white; position: absolute; top: 200px; width: 100%; text-align: center;">
+                
+                <!-- Page Banner -->
+                <div class="titleArea">
+                    <h2 class="page_title">
+                        About 'GoodSudan' Website
+                    </h2>
+                    <img src="img/sudanHand.png" style="width: 200px;">
+                </div>
+            </h1>
+            <br>
+            
+            <!-- reason of our website's name -->
+            <h3>Why is the website called 'GoodSudan'?</h3>
+            <div class="reasonBox">
+                <div class="firstBox" onclick="clickFunction('click1')">
+                    <h2 class="clickText" id="click1">Click!</h2>
+                </div>
+                <div class="secondBox" onclick="clickFunction('click2')">
+                    <h2 class="clickText" id="click2">Click!</h2>
+                </div>
+                <div class="conclusion" onclick="clickFunction('click3')">
+                    <h2 class="clickText" id="click3">Click!</h2>
+                </div>
+            </div>
+
+            <!-- purpose of our website -->
+            <h3>Purpose of Our Website</h3>
+            <div class="purposeArea">
+                <div class="purpose"> <!-- Purpose 1 -->
+                    <img class="purpose_img" src="img/speaker.png">
+                    <p class="purpose_title">< For introduction ></p>
+                    <br>
+                    <p class="purpose_content">
+                        Our website aims to give information 
+                        about the problems in the country of Sudan, 
+                        such as economic, political and educational crisis.
+                    </p>
+                </div>
+                <div class="purpose"> <!-- Purpose 2 -->
+                    <img class="purpose_img" src="img/pray.png">
+                    <p class="purpose_title">< For pray ></p>
+                    <br>
+                    <p class="purpose_content">
+                        There is a separate page for praying 
+                        for the Sudanese people. People around the world
+                        can see the difficulties that Sudanese people are 
+                        currently experiencing through our web page and 
+                        pray around the title of their prayer.
+                    </p>
+                </div>
+                <div class="purpose"> <!-- Purpose 3 -->
+                    <img class="purpose_img" src="img/volunteer.png">
+                    <p class="purpose_title">< For volunteering ></p>
+                    <br>
+                    <p class="purpose_content">
+                        Our website is recruiting educational 
+                        volunteers to provide quality education to Sudanese children. 
+                        In addition to the 'Support page', 
+                        the website serves as a bridge between volunteers 
+                        and Sudanese people, including recruiting human resources 
+                        for building buildings, emotional counselors for refugees, 
+                        and volunteers with international driver's 
+                        licenses to guide evacuation routes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- our website's operating video -->
+            <h3>What pages are there?</h3>
+            <div class="websiteVideo">
+                <video width="900px" height="500px" src="video/team02_video.mp4" controls></video>
+            </div>
+
+            <!-- Making membership card -->
+            <h3>If you want to register as a member who loves Sudan?!</h3>
+            <p style="text-align: center; font-size: 24px; font-weight: bold; font-family: 'Jua'; color: tomato;">Input your information!</p>
+            <div class="register_member">
+                <input type="text" id="input_name" placeholder="Name">
+                <br>
+                <input type="number" id="input_age" required placeholder="Age (Only Number Type)">
+                <br>
+                <input type="text" id="input_date" placeholder="Date (20XX.XX.XX)">
+                <br><br>
+                <button class="btn" onclick="make_card()">Register Member</button>
+                <h2 id="make_finish" style="font-family: 'DoHyeon'; color: darkblue;"></h2>
+                <div id="member_card">
+                    <div id="title"></div>
+                    <div id="content"></div>
+                </div>
+            </div>
+
+            <!-- Introduction to the team members who created this website -->
+            <h3>Who made this website?</h3>
+            <div class="card-group">
+                <!-- Member 1 -->
+                <div class="card">
+                    <div class="photo-area">
+                        <img class="card-photo" src="img/yeji_photo.jpeg">
+                        <p class="member">Team Member01</p>
+                    </div>
+                    <div class="info">
+                        <p class="name">Hong YeJi <span class="student_id">(21900806)</span></p>
+                        <div class="blank"></div>
+                        <p>Handong Global Univ. Student</p>
+                        <p>Major in Computer Engineering</p>
+                        <div class="blank"></div>
+                        <p class="role">role</p>
+                        <p>Home Page & Login Page</p>
+                        <p>Introduction to website</p>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="card">
+                    <div class="photo-area">
+                        <img class="card-photo" src="img/yoonju_photo.jpeg">
+                        <p class="member">Team Member02</p>
+                    </div>
+                    <div class="info">
+                        <p class="name">Kim YoonJu <span class="student_id">(22000159)</span></p>
+                        <div class="blank"></div>
+                        <p>Handong Global Univ. Student</p>
+                        <p>Major in Counseling Psychology </p>
+                        <div class="blank"></div>
+                        <p class="role">role</p>
+                        <p>Volunteer - Education support</p>
+                        <p>Volunteer - General support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group2">
+                <!-- Member 3 -->
+                <div class="card">
+                    <div class="photo-area">
+                        <img class="card-photo" src="img/niya.jpeg">
+                        <p class="member">Team Member03</p>
+                    </div>
+                    <div class="info">
+                        <p class="name">Niya <span class="student_id">(22100842)</span></p>
+                        <div class="blank"></div>
+                        <p>Handong Global Univ. Student</p>
+                        <p>Major in GLS</p>
+                        <div class="blank"></div>
+                        <p class="role">role</p>
+                        <p>Donation - Fee support</p>
+                        <p>Donation - Other support</p>
+                    </div>
+                </div>
+                <!-- Member 4 -->
+                <div class="card">
+                    <div class="photo-area">
+                        <img class="card-photo" src="img/esther_photo.jpeg">
+                        <p class="member">Team Member04</p>
+                    </div>
+                    <div class="info">
+                        <p class="name">Esther Gon <span class="student_id">(22200032)</span></p>
+                        <div class="blank"></div>
+                        <p>Handong Global Univ. Student</p>
+                        <p>Major in GLS</p>
+                        <div class="blank"></div>
+                        <p class="role">role</p>
+                        <p>Pray Page</p>
+                        <p>Introduction to Sudan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer position - fixed -->
+        <div class="footer">
+            <p id="footer_text">Copyright by App Programming Team 02</p>
+        </div>
+    </body>
+</html>

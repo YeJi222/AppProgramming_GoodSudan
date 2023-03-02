@@ -1,0 +1,159 @@
+<html>
+<head> 
+    <title>Fee Support Page</title>
+    <link href="css/common.css" rel="stylesheet">
+    <style>
+        .middle{
+            margin-top: 160px;
+            text-align: center;
+            margin-bottom: 170px;
+        }
+        body{
+            background-color: #EAE4FF
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            color: darkblue;
+            position: static;
+            top: 100px;
+        }
+        h3{ 
+            font-size: 30px;
+            text-align: center;
+            color: darkblue;
+            position: relative;
+            top: 50px;
+        }
+        p {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+        }
+    .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .shadowImg{
+            box-shadow: 5px 5px 5px grey;
+        }
+        .frame1{
+            margin: auto;
+            box-shadow:1px 10px 4px rgba (0,0,0,0.5);
+            padding:10px;
+            background-color: white;
+            width: 70%;
+            border-radius: 5px;
+        }
+        .bold:hover{
+            color:red;
+        }
+        .bold{
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body> 
+    <!-- Logo, login, menubar - fixed -->
+    <div class="headerArea">
+        <div class="webName">
+            <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+            <div class="loginDiv" onclick="location.href='./login.html'">
+                <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+                <div class="loginSection">Login</div>
+                <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+            </div>
+        </div>
+
+        <!-- Menubar position -->
+        <div class="header">
+            <div class="menubar">
+                <ul class="menuItems"> <!-- Main menu -->
+                    <li><a id="homeIcon" href="index.html">Home</a></li>
+                    <li><a href="pray.html">Pray</a></li>
+                    <li>
+                        <a href="#">Introduction</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="intro_sudan.html">About Sudan</a></li>
+                            <li><a href="intro_website.html">About Our Website</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Donation</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="feeSupport.html">Fee Support</a></li>
+                            <li><a href="otherSupport.html">Other Support</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Volunteer</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="educationSupport.html">Education Support</a></li>
+                            <li><a href="generalSupport.html">General Support</a></li>
+                        </ul>
+                    </li>
+                    <p class="welcome" href="#">Welcome :)</p>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle part - can scroll -->
+    <div class="middle">
+        <img src="img/feeBackground.jpeg" style="height: 40%; width: 100%; box-shadow: none;">
+        <h1 style="font-family: fantasy; color: white; position: absolute; top: 330px; width: 100%; text-align: center;">
+            Fee Support Page :)
+        </h1>
+        <br>
+        
+        <div id="center">
+            <br>
+            <br>
+            <p style="font-family: 'DoHyeon';"> The ongoing crisis in Sudan has been made worse by the pandemy of Covid-19, deteriorating economic climate, <br>
+                recurrent acts of violence in numerous states, a meager harvest, 
+                and as well as <br> the changes in the price of grains and other food items on a global scale. <br>
+                Moreover, with the removal of civic leaders from the military last year, the situation in Sudan is politically unsafe. <br>
+                Therefore, let's help transforming lives in Sudan. <br>
+                <br>
+            </p>
+        
+            <img class="shadowImg" src="https://www.concernusa.org/wp-content/uploads/2017/02/concern-south-sudan-poc-site-distribution.jpg" 
+            width="520" height="450" class="center">
+        </div>
+        <br><br>
+
+        <p style="font-family: 'DoHyeon';">
+            With the collected fund, we will help them to provide safety needs <br> 
+            through SOS Mayday Emergency and sponsor SOS villages. <br> 
+            Also, it will be used to provide latrines, showers, and clean water that is extremly needed. <br>
+            This fund will also be used to provide the Sudanese for their daily needs.
+        </p>
+        
+        <!-- Go to Other Support Page -->
+        <a style="font-family: 'Jua'; color: green; font-size: 20px;" href="otherSupport.html">Other needs details, click here. </a>
+        <br><br>
+
+        <img class="shadowImg" src="https://www.gannett-cdn.com/presto/2019/10/02/PROC/31fd4a8b-0e23-45c1-af2c-f6a9b1d20f9d-Salva_Dut_at_Pump_for_Walk_for_Water.jpg" 
+        width="520" height="470" class="center"> <br><br>
+        <p>
+            <!-- Go to donation link -->
+            <b><a href="https://www.soschildrensvillages.ca/sudan">DONATE NOW</a> </b> 
+        </p>
+
+        <div style="text-align:center;">
+            <br>
+            <img class="shadowImg" src="img/donatenow1.png" alt="centered image" width="200" height="200">
+        </div>
+
+        <br>
+        <p style="font-family: 'DoHyeon';"> Help the people of Sudan to brightly smile again!</p>
+        <h3 style="background-color: white; font-family: 'DoHyeon';" class="frame1" width="530" height="460"> Turn Your Concern into Action  </h3>
+    </div>
+
+    <div class="footer">
+        <p id="footer_text">Copyright by App Programming Team 02</p>
+    </div>
+</body>

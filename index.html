@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/common.css" rel="stylesheet">
+        <style>
+            .middle{
+                margin-top: 150px;
+                text-align: center;
+                margin-bottom: 90px;
+            }
+            .videoSection{
+                padding-top: 20px;
+            }
+            .video{
+                display: inline;
+            }
+
+            /* for responsive */
+            @media(max-width: 1410px){
+                .sideVideo1{
+                    display: none;
+                }
+                .sideVideo2{
+                    display: none;
+                }
+            }
+            /* around video */
+            .sideVideo1{ /* left side of video */
+                font-family: fantasy;
+                font-size: 16px;
+                padding-left: 35px;
+                padding-top: 25px;
+                float: left;
+            }
+            .sideVideo2{ /* right side of video */
+                padding-right: 100px;
+                padding-left: -20px;
+                padding-top: 25px;
+                float: right;
+            }
+            .videoRightText{
+                transform: skew(46deg,-46deg); 
+                font-size: 30px; 
+                color: black;
+                padding-left: 30px;
+                z-index: -1; /* Element stacking order */
+                font-family: "Jua";
+            }
+
+            /* cards area - pray, donation, volunteer */
+            .cardArea{
+                display: inline-block;
+                text-align: center;
+                width: 400px;
+                height: 270px;
+                background-color: rgba(226, 229, 238, 0.5);
+                box-shadow: 7px 7px 15px gray;
+                margin: 40px;
+                border-radius: 20px;
+            }
+            .sectionCard{
+                font-family: fantasy;
+                color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Logo, login, menubar - fixed -->
+        <div class="headerArea">
+            <div class="webName">
+                <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+                <div class="loginDiv" onclick="location.href='./login.html'">
+                    <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+                    <div class="loginSection">Login</div>
+                    <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+                </div>
+            </div>
+    
+            <!-- Menubar position -->
+            <div class="header">
+                <div class="menubar">
+                    <ul class="menuItems"> <!-- Main menu -->
+                        <li><a id="homeIcon" href="index.html">Home</a></li>
+                        <li><a href="pray.html">Pray</a></li>
+                        <li>
+                            <a href="#">Introduction</a>
+                            <ul> <!-- Sub menu-->
+                                <li><a href="intro_sudan.html">About Sudan</a></li>
+                                <li><a href="intro_website.html">About Our Website</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Donation</a>
+                            <ul> <!-- Sub menu-->
+                                <li><a href="feeSupport.html">Fee Support</a></li>
+                                <li><a href="otherSupport.html">Other Support</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Volunteer</a>
+                            <ul> <!-- Sub menu-->
+                                <li><a href="educationSupport.html">Education Support</a></li>
+                                <li><a href="generalSupport.html">General Support</a></li>
+                            </ul>
+                        </li>
+                        <p class="welcome" href="#">Welcome :)</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle part - can scroll -->
+        <div class="middle">
+            <img src="img/indexBackground.jpg" style="height: 40%; width: 100%;">
+            <h1 style="font-family: fantasy; color: white; position: absolute; top: 300px; width: 100%; text-align: center;">
+                Welcome all visitors to the Good Sudan website :)
+            </h1>
+            <br>
+
+            <!-- Embedded youtube video -->
+            <div class="videoSection">
+                <div class="sideVideo1"> <!-- left side of video -->
+                    In Sudan, there are already <br>
+                    about 500,000 kids  <br>
+                    who has experienced severe acute <br>
+                    malnutrition every year.  <br>
+                    <br>
+                    The ongoing crisis has been made worse  <br>
+                    by the deteriorating economic climate, <br>
+                    recurrent acts of violence in <br>
+                    numerous states, a meager harvest, and the  <br>
+                    changes in the price of grains and other <br>
+                    food items on a global scale.  <br>
+                    <br>
+                    Also, it is politically unsafe, with the <br>
+                    removal of civic leaders from the military <br>
+                    last year. <br>
+                    <br>
+                    Due to the continuing civil war, it is <br>
+                    difficult for children to receive education, <br>
+                    such as burning schools.
+                </div>
+                
+                <div class="video">
+                    <iframe width="700" height="500" src="https://www.youtube.com/embed/YtNTtT3XzwI?autoplay=1&mute=1;" 
+                        title="YouTube video" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="sideVideo2"> <!-- right side of video -->
+                    <br><br><br><br>
+                    <h2 class="videoRightText" style="color: rgb(129, 129, 223);">Sudan❤️</h2>
+                    <br><br><br><br><br><br>
+                    <h2 class="videoRightText" style="color:rgb(255, 121, 3);">We pray for <br>Sudan people :)</h2>
+                </div>
+            </div>
+
+            <!-- pray, donation, volunteer cards -->
+            <div class="sectionArea">
+                <a href="pray.html">
+                    <div class="cardArea">
+                        <br>
+                        <h2 class="sectionCard">Let's pray for the Sudan!</h2>
+                        <img src="img/pray.png" width="200px" height="200px">
+                    </div>
+                </a>
+                <a href="feeSupport.html">
+                    <div class="cardArea">
+                        <br>
+                        <h2 class="sectionCard">If you want to donation?!</h2>
+                        <img src="img/donate.png" width="200px" height="200px">
+                    </div>
+                </a>
+                <a href="generalSupport.html">
+                    <div class="cardArea">
+                        <br>
+                        <h2 class="sectionCard">If you want to volunteer?!</h2>
+                        <img src="img/volunteer.png" width="200px" height="200px">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Footer position - fixed -->
+        <div class="footer">
+            <p id="footer_text">Copyright by App Programming Team 02</p>
+        </div>
+    </body>
+</html>

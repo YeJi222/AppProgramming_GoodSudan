@@ -1,0 +1,229 @@
+<html>
+<head>
+  <title>Other Support Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/common.css" rel="stylesheet">
+  <style>
+    .middle{
+        margin-top: 160px;
+        text-align: center;
+        margin-bottom: 170px;
+    }
+    body {
+      text-align: center;
+    }
+    
+    .frame1{
+        box-shadow:1px 10px 4px rgba (0,0,0,0.5);
+        padding:10px;
+        background-color: white;
+    }
+    .container { /* for black layer; */
+      margin-top: 600px;
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .blank{ /* the box to add types of donation; */
+      background-color: #ba94d18b;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .blank::placeholder{
+        color: white;
+        text-align: center;
+    }
+    
+    .donation{
+      background-color: rgba(255, 255, 255, 0.792);
+      color: rgb(201, 91, 91);
+      padding: 10px;
+    }
+    /* paragraph type 1 */
+    .pr1 {
+        text-align: center;
+        color: darkblue;
+        font-size: 25px;
+        font-family: "DoHyeon";
+    }
+    h3{ 
+        font-size: 30px;
+        text-align: center;
+        color: darkblue;
+        position: relative;
+        top: 50px;
+    }
+    
+    /* paragraph type 2*/
+    .pr2{
+        font-size: 40px;
+        text-align: center;
+        color: darkblue;
+        position: static;
+        top: 100px;
+    }
+    .container img {vertical-align: middle;}
+    
+    /* for black layer, both has to be written */
+    .container .content {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black layer with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .registerBtn{
+        padding: 10px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 100px;
+        background-color: tomato
+    }
+    .frame1{
+        margin: auto;
+        box-shadow:1px 10px 4px rgba (0,0,0,0.5);
+        padding:10px;
+        background-color: white;
+        width: 70%;
+        border-radius: 5px;
+    }
+  </style>
+  <script>
+      function myFunction () {
+          let inputElement=document.getElementById("myInput");
+          let paraElement=document.getElementById("myParagraph");
+          paraElement.innerHTML=paraElement.innerHTML+" "+inputElement.value;
+      }
+  </script>
+</head>
+<body>
+  <!-- Logo, login, menubar - fixed -->
+  <div class="headerArea">
+    <div class="webName">
+        <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+        <div class="loginDiv" onclick="location.href='./login.html'">
+            <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+            <div class="loginSection">Login</div>
+            <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+        </div>
+    </div>
+
+    <!-- Menubar position -->
+    <div class="header">
+        <div class="menubar">
+            <ul class="menuItems"> <!-- Main menu -->
+              <li><a id="homeIcon" href="index.html">Home</a></li>
+              <li><a href="pray.html">Pray</a></li>
+              <li>
+                  <a href="#">Introduction</a>
+                  <ul> <!-- Sub menu-->
+                      <li><a href="intro_sudan.html">About Sudan</a></li>
+                      <li><a href="intro_website.html">About Our Website</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Donation</a>
+                  <ul> <!-- Sub menu-->
+                      <li><a href="feeSupport.html">Fee Support</a></li>
+                      <li><a href="otherSupport.html">Other Support</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Volunteer</a>
+                  <ul> <!-- Sub menu-->
+                      <li><a href="educationSupport.html">Education Support</a></li>
+                      <li><a href="generalSupport.html">General Support</a></li>
+                  </ul>
+              </li>
+              <p class="welcome" href="#">Welcome :)</p>
+            </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle part - can scroll -->
+  <div class="middle">
+    <img src="img/otherBackground.jpeg" style="height: 40%; width: 100%;">
+    <h1 style="font-family: fantasy; color: black; position: absolute; top: 300px; width: 100%; text-align: center;">
+        Other Support Page :)
+    </h1>
+    <br>
+
+    <br><br>
+    <p class="pr1"> You can as well help Sudan by donating daily needs such as: </p>
+    <br><br>
+
+    <!-- Clothing Part -->
+    <div class="container">
+      <img src="https://venturesafrica.com/wp-content/uploads/2016/09/Food-Crisis-Worsens-in-South-Sudan-as-Civil-War-Is-Displacing-Millions.jpg" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1 color: white;> Clothing </h1>
+        <p> <q>Giving them clothes, we have given them dignity...Dignity is all about feeling on top, <br>
+            that you are in the right place, and you have the right things that you are putting on, <br>
+              and that everyone will look at you and say 'wow.' That is very important.</q> -UNHCR
+        </p>
+        <br>
+        <a href="https://southsudan.lutheranworld.org/content/donate-6" class="donation">>> DONATE NOW<<</a>
+      </div>
+    </div>
+    <br>
+    
+    <!-- Food Resources Part -->
+    <div class="container">
+      <img src="https://www.wvi.org/sites/default/files/styles/large_780x520/public/IMAGE%201_0.jpg?itok=4drT8VM1" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1 color: white;> Food Resources </h1>
+        <p> More than 6.8 million people in South Sudan experiencing hunger and about 500,000 has experienced severe acute malnutrition every year.</p>
+        <br>
+        <a href="https://www.wfpusa.org/countries/sudan/" class="donation">>> DONATE NOW<<</a>
+      </div>
+    </div>
+    <br>
+    
+    <!-- Daily Necessities Part -->
+    <div class="container">
+      <img src="http://prod-upp-image-read.ft.com/add0429a-6ac8-11e3-aa98-00144feabdc0" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1 color: white;> Daily Necessities </h1>
+        <p> Provide the People of Sudan with daily supplies.</p>
+        <br>
+        <a href="https://www.unicef.org/sudan/" class="donation">>> DONATE NOW<<</a>
+      </div>
+    </div>
+    <br>
+
+    <!-- Medical Needs Part -->
+    <div class="container">
+      <img src="https://sapa-usa.org/wp-content/uploads/2020/07/107381136_617899538852639_4451030841776578705_n.jpg" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1 color: white;> Medical Needs </h1>
+        <p> Provide Medical services and needs in the middle of the crisis.</p>
+        <br>
+        <a href="https://sapa-usa.org/sapa-covid19-task-force/" class="donation">>> DONATE NOW<<</a>
+      </div>
+    </div>
+    
+    <br><br><br>
+    <h1 style="color: tomato; font-family: 'DoHyeon';"> Input Your Donation </h1>
+    <input class="blank" type="text" id="myInput" placeholder="your donation, ex: clothing" style="width:250px; height:40px;">
+    <h2 style="color: darkblue; font-size: 18px;"> click to show the input </h2>
+    <button class="registerBtn" onclick="myFunction()">Register</button>
+    <br><br>
+    <p id="myParagraph"></p>
+    
+    <h3 style="background-color: white; font-family: 'DoHyeon';" class="frame1" width="530" height="460"> Turn Your Concern into Action  </h3>
+  </div>
+
+  <div class="footer">
+    <p id="footer_text">Copyright by App Programming Team 02</p>
+  </div>
+</body>
+</html>

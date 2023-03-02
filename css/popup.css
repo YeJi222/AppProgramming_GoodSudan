@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "DoHyeon";
+	src: url("../fonts/DoHyeon-Regular.ttf");
+}
+body{
+	background-color: #F4F5FF;
+	text-align: center;
+}
+h3{ /* 'Success to login!' text */
+	font-family: "DoHyeon";
+	font-size: 30px;
+	padding-top: 55px;
+}
+a{ /* Ok Button's style */
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(247, 138, 138);
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+}

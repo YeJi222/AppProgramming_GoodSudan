@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		@font-face {
+			font-family: "DoHyeon";
+			src: url("fonts/DoHyeon-Regular.ttf");
+		}
+		body{
+			background-color: #d6cef3;
+			font-family: "DoHyeon";
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.loginBox{
+			margin: auto;
+			margin-top: 150px;
+			width: 650px;
+			height: 650px;
+			background-color: #f6c9c9;
+		}
+		.closeBtn{
+			font-size: 30px;
+			margin: 20px;
+			position: relative;
+			left: 595px;
+			top: 15px;
+			text-decoration: none;
+			color: black;
+		}
+		.loginTitle{
+			font-size: 60px;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.idSection{
+			margin-left: 25px;
+		}
+		.pwSection{
+			margin-left: 25px;
+		}
+		/* Emoji image's size setting */
+		.emoji{
+			width: 90px;
+			height: 90px;
+		}
+		.idBlank{
+			position: relative;
+			bottom: 30px;
+			width: 470px;
+			height: 70px;
+			background-color: #EEE0E0;
+			border-radius: 15px;
+			border: none;
+			padding-left: 20px;
+			font-size: 2em;
+		}
+		/* Input box's placeholder */
+		::placeholder {
+		 	color: #AAA4A4;
+		}
+		.loginBtn{
+			color: white;
+			background-color: tomato;
+			border-radius: 40px;
+			font-size: 38px;
+			margin-top: 60px;
+			width: 300px;
+			height: 55px;
+			border: none;
+			font-family: "DoHyeon";
+		}
+        .loginBtnDiv{
+            text-align: center;
+        }
+	</style>
+    <script>
+        function loginAction(){
+            var inputID = document.getElementById('userID');
+            var inputPW = document.getElementById('userPW');
+
+			// ID : user1, PW : 0000
+            if(inputID.value == 'user1' && inputPW.value == '0000'){
+				// Pop-up
+                window.open('loginSuccess.html', 'Login Success', 'width=400, height=200, top=200, left=200');
+                location.href = "index.html";
+            } else{
+				// Login Failed
+                alert('Fail to login! Check your ID or Password!');
+            }
+        }
+    </script>
+</head>
+<body>
+	<div class="loginBox">
+		<a class="closeBtn" href="index.html">
+			X
+		</a>
+		<p class="loginTitle">
+			LOGIN
+		</p>
+
+		<!-- ID section -->
+		<div class="idSection"> 
+			<img class="emoji" src="img/idImg.png">
+			<input class="idBlank" type="text" placeholder="ID" name="userID" id="userID" required>
+		</div>
+
+		<!-- PW section -->
+		<div class="pwSection">
+			<img class="emoji" src="img/pwImg.png">
+			<input class="idBlank" type="password" placeholder="Password" name="userPW" id="userPW" required>
+		</div>
+
+		<div class="loginBtnDiv">
+			<button class="loginBtn" onclick="loginAction()">
+				Login
+			</button>
+		</div>
+	</div>
+</body>
+</html>

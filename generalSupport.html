@@ -1,0 +1,314 @@
+<html>
+    <head>
+    <title>General Support Page</title>
+    <link href="css/common.css" rel="stylesheet">
+    <script>
+        /*Use it so that users can write down what they want to say to Sudan people and refugees*/
+        let array = [];
+        function add() {
+            let input = document.getElementById("myInput");
+            let paragraph = document.getElementById("myParagraph");
+
+            array.push(input.value);
+            paragraph.innerHTML = array;
+            input.value = " ";
+        }
+    </script>
+    <style>
+        /*Use to create menu bar*/
+        .middle{
+            margin-top: 160px;
+            text-align: center;
+            margin-bottom: 170px;
+        }
+
+        /*Round all image border*/
+        img {
+            border-radius: 20px; /*The effect of rounding the corners of the box*/
+        }
+
+        /*All table settings*/
+        table {
+            margin: auto;
+            margin-top: 25vw;
+            text-align: center;
+        }
+
+        /*All table, td, th settings*/
+        table, td, th {
+            border-collapse: collapse; /*How to handle the gap between the border of the table and the border of the cell(td)*/
+            padding: 30px;
+            /* border: 7px solid orange; */
+        }
+
+        /*First and second zone settings for the Good Sudan's refugee rescue project*/
+        .img_area1 {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        /*Third zone settings for the Good Sudan's refugee rescure project*/
+        .img_area2 {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        /*Three picture box shadow settings for the Good Sudan's rescue project*/
+        .imgRefugee{
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        /*Title setting for Good Sudan's refugee rescue project*/
+        .textTitle{
+            font-family: "DoHyeon";
+            font-size: 25px;
+        }
+
+        /*Introduction setting for the title of the Good Sudan's refugee rescue project*/
+        .contentText{
+            font-family: "DoHyeon";
+            font-size: 19px;
+            color: rgb(70, 60, 118);
+        }
+
+        /*Hover the user donation and support part*/
+        h4:hover {color: red;}
+
+        /*Box settings for writing comments*/
+        .input_box {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        /*Name value of the box where user write a comment*/
+        .input_box::placeholder{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /*Comment submit box setting*/
+        .button_box{
+            height: 50px;
+            width: 80px;
+            font-size: 18px;
+            background-color: salmon;
+            border: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        /*Text settings that emphasize user donation and support*/
+        .bottomText {
+            font-family: "DoHyeon";
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: gray;
+            margin-bottom: 70px;
+            margin-top: 40px;
+        }
+
+        /*Use to set font-family and font-size for Love Events*/
+        .jsSection{
+            font-family: "DoHyeon";
+            font-size: 30px;
+        }
+
+        /*Table settings that distinguishes between the situation of refugees in Sudan and the Text that we have written in our help*/
+        .topTable{
+            margin-top: 0;
+            border: 5px dashed rgb(77, 109, 225);
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 50px;
+        }
+
+        /*td text value in table*/
+        .tdText{
+            font-size: 20px;
+            font-family: "DoHyeon";
+        }
+
+        /*td border setting in table*/
+        .topTable td{
+            border-right: 5px dashed rgb(77, 109, 225);
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo, login, menubar - fixed -->
+    <div class="headerArea">
+        <div class="webName">
+            <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+            <div class="loginDiv" onclick="location.href='./login.html'">
+                <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+                <div class="loginSection">Login</div>
+                <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+            </div>
+        </div>
+
+        <!-- Menubar position -->
+        <div class="header">
+            <div class="menubar">
+                <ul class="menuItems"> <!-- Main menu -->
+                    <li><a id="homeIcon" href="index.html">Home</a></li>
+                    <li><a href="pray.html">Pray</a></li>
+                    <li>
+                        <a href="#">Introduction</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="intro_sudan.html">About Sudan</a></li>
+                            <li><a href="intro_website.html">About Our Website</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Donation</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="feeSupport.html">Fee Support</a></li>
+                            <li><a href="otherSupport.html">Other Support</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Volunteer</a>
+                        <ul> <!-- Sub menu-->
+                            <li><a href="educationSupport.html">Education Support</a></li>
+                            <li><a href="generalSupport.html">General Support</a></li>
+                        </ul>
+                    </li>
+                    <p class="welcome" href="#">Welcome :)</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle part - can scroll -->
+    <div class="middle">
+        <img src="img/generalBackground.png" style="height: 40%; width: 100%; border-radius: 0px;">
+        <h1 style="font-family: fantasy; color: white; position: absolute; top: 230px; width: 100%; text-align: center;">
+            General Support Page
+        </h1>
+
+        <!-- Explain the situation of Sudan refugees and what our help is -->
+        <table class="topTable">
+            <tbody><tr>
+                <td>
+                    <!-- Sub text-->
+                    <div class="icon">
+                        <img src="img/general_icon1.png" width="200px" height="200px" style="border-radius: 5px; margin-bottom: 20px;">
+                    </div>
+                    <h2 class="tdText">Assistance to Sudan War Refugees <br>
+                    The pain is not over the war ended.
+                    As war, the number of war refugees are continuing
+                    over five hundred million people.
+                    There are people who have been separated from their families
+                    and forced out of their homes due to the terrible war.</h2>
+                </td>
+                <td>
+                    <!-- Sub text-->
+                    <div class="icon">
+                        <img src="img/general_icon2.png" width="200px" height="200px" style="border-radius: 5px; margin-bottom: 20px;">
+                    </div>    
+                    <h2 class="tdText">In the horrors of the worsening war,
+                    Good Sudan is helping war refugees escape.
+                    Every day, we have a scary night in the cold air.
+                    We need your help so that food, medicine,
+                    and clothing sent to Sudan for them do not stop.</h2> 
+                </td>
+                <td>
+                    <!-- Sub text-->
+                    <div class="icon">
+                        <img src="img/general_icon3.png" width="200px" height="200px" style="border-radius: 5px; margin-bottom: 20px;">
+                    </div> 
+                    <h2 class="tdText">Their suffering is just beginning. Please protect their daily lives.
+                    The number of war refugees have continued
+                    to rise beyond five million people.
+                    Even if the war ended, how many time
+                    and help them return to the seat of life.</h2>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Good Sudan's refugee rescue project -->
+        <table width="90%" height="60%" style="margin-top: 0;">
+            <!-- -- 1st row ---->
+            <tr>
+                <th><div class="img_area1">
+                    <img class="imgRefugee" src="img/refugee4.jpg" width="500vw"></div>
+                </th>
+                <td>
+                    <h2 class="textTitle">Recruitment of volunteers to operate <br>
+                        in the event of a facility collapse
+                    </h2>
+                    <br>
+                    <div class="contentText">
+                        They clean up the collapsed debris together <br>
+                        and create new homes together to provide refugees.
+                    </div>
+                </td>
+            </tr>
+
+            <!-- -- 2nd row ---->
+            <tr>
+                <td>
+                    <div class="img_area1">
+                        <img class="imgRefugee" src="img/refugee5.png" width="500vw">
+                    </div>
+                </td>
+                <td>
+                    <h2 class="textTitle">Mobile Traffic Assistance for Evacuation</h2>
+                    <br>
+                    <div class="contentText">
+                        It supports transportation for safe evacuation of refugees through volunteers <br>
+                        who have been issued international driver's licenses.
+                    </div>
+                </td>
+            </tr>
+
+            <!-- --3rd row ---->
+            <tr>
+                <td>
+                    <div class="img_area2">
+                        <img class="imgRefugee" src="img/refugee3.jpg" width="500vw">
+                    </div>
+                </td>
+                <td>
+                    <h2 class="textTitle">Mental and emotional help</h2>
+                    <br>
+                    <div class="contentText">
+                        They try to help refugees mentally and emotionally by volunteering for people <br>
+                        who have counseling certificates or majored in social welfare.
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Explain the need for user donation and support -->
+        <h4 class="bottomText">Our service can now save their lives, <br>
+            which have lost everything in the war.
+        </h4>
+        
+        <!-- Comments from users to Sudan people and refugees -->
+        <div class="jsSection">
+            <h5>Love Events</h5>
+            <p style="font-size: 20px; font-family: 'Jua'; color: tomato;">Please write what you want to say to the Sudan people :)</p>
+            <br>
+
+            <input class="input_box" type="text" name="comment" id="myInput" placeholder="Enter your comments :)">
+            <button class="button_box" onclick="add()">submit</button>
+            <br><br>
+
+            <h6>Comments:</h6>
+            <p id="myParagraph"></p>
+        </div>
+
+        <!-- Annouce the copyright of Team 2 who creaed the website -->
+        <div class="footer">
+            <p id="footer_text">Copyright by App Programming Team 02</p>
+        </div>
+    </div>
+</body>
+</html>

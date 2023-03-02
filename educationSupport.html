@@ -1,0 +1,277 @@
+<html>
+<head>
+   <title>Education Support Page</title>
+   <link href="css/common.css" rel="stylesheet">
+   <style>
+
+   /*Use to create menu bar*/
+   .middle{ 
+      margin-top: 160px;
+      text-align: center;
+      margin-bottom: 170px;
+   }
+
+   /*Use to set text in border*/
+   .box { 
+      border: 12px solid rgb(254, 212, 106);
+      font-family: "DoHyeon";
+      margin: 35px;
+      border-radius: 10px;
+      padding: 20px;
+   }
+
+   /*Use to distinguish between high quality part text and images*/
+   .area{
+      text-align: center;
+      font-family: "Jua";
+      color: darkblue;
+      font-size: 23px;
+      margin-bottom: 20px;
+      margin-bottom: 20px;
+   }
+
+   /*Use to set the high quality educational part images*/
+   .img_area{
+      margin-top: 20px;
+      display: inline-block; /*You can place multiple elements exactly as much width as you want in one line*/
+      margin-right: 10px;
+   }
+   .img_area2{
+      margin-top: 20px;
+      display: inline-block;
+   }
+
+   /*Good Sudan's 3 ways educational serive part display settings*/
+   .areaPicture{
+      display: inline-block;
+   }
+
+   /*Use to create 3 wats of Good Sudan service*/
+   table{
+      text-align: center;
+      margin: auto;
+      padding: 20px;
+   }
+
+   /*Good Sudan's 3 ways educational serive part image settings*/
+   .areaPicture{
+      margin: 30px;
+      box-shadow: 10px 10px 5px grey;
+   }
+
+   /*Good Sudan's 3 ways educational serive part zone settings*/
+   .areaText{
+      padding: 30px;
+   }
+
+   /*The setting value of the title to the 3 ways Good Sudan's educational service*/
+   .head_text{
+      font-size: 35px;
+      font-weight: bold;
+      font-family: "DoHyeon";
+   }
+
+   /*The setting value of the introduction to the 3 ways Good Sudan's educational serive*/
+   .textContent{
+      font-family: "Jua";
+      font-size: 20px;
+      color: rgb(126, 126, 126);
+   }
+   
+   /*bottomTable, bottomTable td, th setting value*/
+   .bottomTable, .bottomTable td, th{
+      margin: auto;
+      text-align: center;
+      border-collapse: collapse; /* How to handle the gap between the border of the table and the border of the cell(td) */
+      border: 5px solid white;
+      padding: 30px;
+   }
+   
+   /*Table setting value introducing the education of children of means to change through user donation*/
+   .bottomTable{
+      margin-top: 20px;
+      box-shadow: 10px 10px 5px grey;
+   }
+
+   /*Use how user donation can change the education of children in Sudan*/
+   .bottomTable tr:hover{
+      background-color: rgb(225, 242, 251);
+   }
+   </style>
+</head>
+<body>
+   <!-- Logo, login, menubar - fixed -->
+   <div class="headerArea">
+      <div class="webName">
+          <h1 onclick="location.href='index.html'">Good<br>Sudan</h1>
+          <div class="loginDiv" onclick="location.href='./login.html'">
+              <img class="loginIcon" src="img/login.png" width="30px" height="30px">
+              <div class="loginSection">Login</div>
+              <img class="profileIcon" src="img/profileIcon.png" width="60px" height="60px">
+          </div>
+      </div>
+
+      <!-- Menubar position -->
+      <div class="header">
+          <div class="menubar">
+              <ul class="menuItems"> <!-- Main menu -->
+                  <li><a id="homeIcon" href="index.html">Home</a></li>
+                  <li><a href="pray.html">Pray</a></li>
+                  <li>
+                      <a href="#">Introduction</a>
+                      <ul> <!-- Sub menu-->
+                          <li><a href="intro_sudan.html">About Sudan</a></li>
+                          <li><a href="intro_website.html">About Our Website</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">Donation</a>
+                      <ul> <!-- Sub menu-->
+                          <li><a href="feeSupport.html">Fee Support</a></li>
+                          <li><a href="otherSupport.html">Other Support</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">Volunteer</a>
+                      <ul> <!-- Sub menu-->
+                          <li><a href="educationSupport.html">Education Support</a></li>
+                          <li><a href="generalSupport.html">General Support</a></li>
+                      </ul>
+                  </li>
+                  <p class="welcome" href="#">Welcome :)</p>
+               </ul>
+          </div>
+      </div>
+  </div>
+
+  <!-- Middle part - can scroll -->
+  <div class="middle">
+      <img src="img/educationBackground.png" style="height: 40%; width: 100%;">
+      <h1 style="font-family: fantasy; color: black; position: absolute; top: 200px; width: 100%; text-align: center;">
+         Education support :)
+      </h1>
+      <br>
+      
+      <div class="box">
+         <h2>Children in Sudan who have never experienced a safe daily life due to 15 years of civil war.<br>
+         Nevertheless, in order to study, the children did not mind walking more than three hours to school.<br>
+         Their parents are worried that they might lose their lives on the way to and from school and home.<br>
+         But the desperation that you can't make your children's future your present was too great.<br>
+         <br><br>
+         and, Unfortynately, as a result of the COVID-19 pandemic, <br>
+         education systems worldwide have been elevastated.
+         </h2>
+      </div>
+    
+      <!-- High quality educational part -->
+      <div class="area">
+         <p>Let's ensure access to education for children in Sudan suffering from <br>
+            poverty, hunger, and civil war and provide quality educational opportunities together.</p>
+      </div>
+
+      <div class="img_area">
+         <img src="img/school.png" width="530px" height="350px">
+      </div>
+      <div class="img_area">
+         <img src="img/child.jpg" width="510px" height="350px"> 
+      </div>
+
+      <br><br><br><br>
+      <div class="area">
+         <p>So that children who are marginalized by poverty, child labor, and discrimination <br>
+            can dream of a better future Provide equal opportunities for quality education.
+         </p>
+      </div>
+
+      <!-- 3 ways of Good Sudan educational serive part-->
+      <table>
+         <tr>
+            <td>
+               <div class="areaPicture">
+                  <img src="img/happy.jpg" width="500px">
+               </div>
+            </td>
+            <td>
+               <div class="areaText">
+                  <h2 class="head_text">Improved access to education</h2>
+                  <br><br>
+                  <p class="textContent">
+                     Support educational facilities such as kindergartens, elementary, middle and high schools, <br>
+                     and educational equipment, It provides a high-quality educational environment <br>
+                     by providing tuition and scholarships.
+                  </p>
+               </div>
+            </td>
+         </tr>
+      </table>
+
+      <table>
+         <tr>
+            <td>
+               <div class="areaText">
+                  <h2 class="head_text">Ensuring Quality Education</h2>
+                  <br><br>
+                  <p class="textContent">
+                     The quality of educational services is improved by supporting teachers
+                     and capacity building, cultivating literacy and math skills,
+                     and developing and operating various educational programs tailored
+                     to the development process such as gender and vocational education and training.
+                  </p>
+               </div>
+            </td>
+            <td>
+               <div class="areaPicture">
+                  <img src="img/study.jpg" width="500px">
+               </div>
+            </td>
+         </tr>
+      </table>
+
+      <table>
+         <tr>
+            <td>
+               <div class="areaPicture">
+                  <img src="img/hehe.jpg" width="500px">
+               </div>
+            </td>
+            <td>
+               <div class="areaText">
+                  <h2 class="head_text">Strengthening awareness of educational rights</h2>
+                  <br><br>
+                  <p class="textContent">
+                     Conducting campaigns to defend educational rights, supporting self-governing activities, <br>
+                     Through the development and operation of lifelong education for parents and local residents, <br>
+                     Promote parents and communities' awareness of the right to children's education.
+                  </p>
+               </div>
+            </td>
+         </tr>
+      </table>
+
+      <!-- The bottom change situation with user donation -->
+      <br><br>
+      <h3 class="head_text">With your donations</h3>
+
+      <h3 style="font-family: 'Jua'; padding: 10px; color: tomato; font-size: 23px;">Please join us in the school restoration project so that children can study as soon as possible!</h3>
+      <table class="bottomTable">
+         <tr>
+            <td colspan="2">We will support school tents and desks and chairs for a temporary space for studying.</td>
+         </tr>
+         <tr>
+            <td colspan="2">We will prepare concrete and rebar materials for the reconstruction of the school building.</td>
+         </tr>
+         <tr>
+            <td colspan="2">We can achieve rapid restoration within three months by securing an urgent construction worker.</td>
+         </tr>
+         <tr>
+            <td colspan="2">100 children can continue their studies at home by receiving self-study materials.</td>
+         </tr>
+      </table>
+   </div>
+
+   <!-- Annouce the copyright of Team 2 who creaed the website -->
+   <div class="footer">
+      <p id="footer_text">Copyright by App Programming Team 02</p>
+   </div>
+</body>
+</html>
