@@ -17,7 +17,7 @@
 👉🏻 With this website, I hope that this could be medium for people who is willing to help Sudan.  
 
 ## 3. 페이지 설명
-### [📝 주요 페이지 구성](https://github.com/YeJi222/AppProgramming_GoodSudan/tree/main)
+### [📝 주요 페이지 구성](https://github.com/YeJi222/AppProgramming_GoodSudan/blob/main/page.md)
 
 ## 4. 프로젝트 구조
 ### [🌲 프로젝트 구조 Tree 형식으로 보기](https://github.com/YeJi222/AppProgramming_GoodSudan/tree/main)  
